@@ -1,0 +1,85 @@
+.nav p img{
+	transform: rotate(180deg);
+	-moz-transform: rotate(180deg);
+	-ms-transform: rotate(180deg);
+	-o-transform:rotate(180deg);
+	-webkit-transform: rotate(180deg);
+}
+.nav p:nth-child(2){
+	left: calc((100% - 68px)/2);
+}
+.withdrawals form .withdrawals_line1{
+	width: 100%;
+	height: 50px;
+	background: #fff;
+	line-height: 50px;
+	border-bottom: 1px solid #eee;
+}
+.withdrawals form .withdrawals_line1 p{
+	text-indent: 10px;
+}
+.withdrawals form .withdrawals_line1 p span{
+	color: #ff0e00;
+}
+.withdrawals form .withdrawals_line1:not(:first-child){
+	margin-top: 13px;
+}
+.withdrawals form .withdrawals_line1 label{
+	margin-left: 10px;
+	float: left;
+}
+.withdrawals form .withdrawals_line1 input{
+	border: none;
+	height: 50px;
+	width: calc(100% - 26px);
+	text-indent: 20px;
+}
+.withdrawals form .withdrawals_line1:nth-child(3) p{
+	color: #666;
+	font-size: 14px;
+}
+.withdrawals form .withdrawals_line2{
+	width: 100%;
+	height: 80px;
+	background: #fff;
+}
+.withdrawals form .withdrawals_line2 img{
+	float: left;
+	width: 60px;
+	height: 60px;
+	margin:10px 0px 0px 10px;
+}
+.withdrawals form .withdrawals_line2 p:first-of-type{
+	float: left;
+	margin-top: 10px;
+	line-height: 35px;
+	text-indent: 22px;
+	width: calc(100% - 70px);
+}
+.withdrawals form .withdrawals_line2 p:nth-of-type(2){
+	font-size: 12px;
+	color: #999;
+	text-indent: 22px;
+}
+.withdrawals form>p{
+	font-size: 12px;
+	color: #333;
+	text-indent: 10px;
+	margin-top: 13px;
+	margin-left: 10px;
+}
+.withdrawals form>p>img{
+	width: 17px;
+	height: 17px;
+	float: left;
+}
+.withdrawals form>button{
+	background-image:url(../images/矩形-2-拷贝-3.png);
+	width: 94%;
+	left: 3%;
+	position: absolute;
+	bottom: 80px;
+	border: none;
+	height: 40px;
+	color: #fff;
+}

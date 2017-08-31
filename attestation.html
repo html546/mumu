@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<title>认证中心</title>
+		<link rel="stylesheet" href="css/index.css" />
+		<link rel="stylesheet" href="css/attestation.css" />
+		<script src="js/jquery.min.js"></script>
+	</head>
+	<body style="background: #fff;">
+		<!--nav 可复用-->
+		<div class="nav">
+			<p onclick="javascript:history.back(-1);"><img src="images/箭头2.png" alt="" /></p>
+			<p>认证中心</p>
+		</div>
+		<div class="attestation">
+			<div class="attestation_bg">
+				<p>诚信级别够高，对方就会对你更多一份信任</p>
+			</div>
+			<div class="attestion_line" onclick="javascript:window.location.href='mobileidentify.html'">
+				<p><img src="images/图层-64.png"/>手机认证</p>
+				<p><img src="images/右箭头-拷贝.png"/></p>
+			</div>
+			<div class="attestion_line" onclick="javascript:window.location.href='identify.html'">
+				<p><img src="images/图层-65.png"/>身份认证</p>
+				<p><img src="images/右箭头-拷贝.png"/></p>
+			</div>
+		</div>
+		<!--bottom 可复用-->
+		<div class="mumu_bottom">
+			<div class="mumu_bottom_line1" onclick="javascript:window.location.href='index.html'">
+				<img src="images/tab4.png" alt="穆穆" />
+				<p>穆穆</p>
+			</div>
+			<div class="mumu_bottom_line1" onclick="javascript:window.location.href='nearby.html'">
+				<img src="images/tab3.png" alt="附近" />
+				<p>附近</p>
+			</div>
+			<div class="mumu_bottom_line1" onclick="javascript:window.location.href='personletter.html'">
+				<img src="images/tab2.png" alt="信息" />
+				<p>私信</p>
+			</div>
+			<div class="mumu_bottom_line1">
+				<img src="images/tab5.png" alt="动态" onclick="javascript:window.location.href='dynamic.html'"/>
+				<p>动态</p>
+			</div>
+			<div class="mumu_bottom_line1 active">
+				<img src="images/tab1-1.png" alt="我的" />
+				<p>我的</p>
+			</div>
+		</div>
+	</body>
+</html>

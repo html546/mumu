@@ -1,0 +1,123 @@
+.nav p:first-of-type img{
+	transform: rotate(180deg);
+	-ms-transform: rotate(180deg);
+	-o-transform:rotate(180deg);
+	-moz-transform: rotate(180deg);
+	-webkit-transform: rotate(180deg);
+}
+/*私信内容*/
+.personletter_content{
+	width: 100%;
+	height: auto;
+}
+.personletter_content .personletter_content_line1{
+	margin-left: calc((100% - 137px)/2);
+	margin-top: 15px;
+}
+.personletter_content .personletter_content_line1 button{
+	float: left;
+	width: 68px;
+	height: 30px;
+	border: none;
+	text-align: center;
+	border-radius: 5px;
+}
+.personletter_content .personletter_content_line1 button:first-child{
+	background: #fff;
+	color: #333;
+	border-bottom-right-radius: 0px;
+	border-top-right-radius: 0px;
+	border-top-left-radius: 5px;
+	border-bottom-left-radius: 5px;
+	border: 1px solid #ff6960;
+}
+.personletter_content .personletter_content_line1 button:nth-child(2){
+	width: 67px;
+	height: 30px;
+	background: #fff;
+	color: #333;
+	border: 1px solid #ff6960;
+	border-top-left-radius: 0px;
+	border-bottom-left-radius: 0px;
+}
+.personletter_content .personletter_content_line1 button.active{
+	background: #ff6960;
+	color: #fff;
+}
+.personletter_content .personletter_content_line2,.personletter_content .personletter_content_line3{
+	width: 100%;
+	height: 70px;
+	clear: both;
+	border-bottom: 1px solid #eee;
+}
+.personletter_content .personletter_content_line2 img{
+	width: 45px;
+	height: 45px;
+	float: left;
+	margin-top: 17px;
+	margin-left: 10px;
+}
+.personletter_content .personletter_content_line2 p:first-of-type{
+	float: left;
+	font-weight: bold;
+	margin-left: 12px;
+	margin-top: 17px;
+	color: #333;
+}
+.personletter_content .personletter_content_line2 p:nth-of-type(2){
+    float: left;
+    font-size: 13px;
+    color: #999;
+    margin-top: -15px;
+    margin-left: 67px;
+    clear: left;
+}
+.personletter_content .personletter_content_line3 img{
+	width: 45px;
+	height: 45px;
+	float: left;
+	margin-top: 15px;
+	margin-left: 10px;
+}
+.personletter_content .personletter_content_line3 i{
+	width: 15px;
+	height: 15px;
+	background: #ff0000;
+	color: #fff;
+	display: inline-block;
+	line-height: 15px;
+	border-radius: 50%;
+	font-size: 10px;
+	text-align: center;
+	margin-top: 8px;
+	float: left;
+	margin-left: -10px;
+	font-style: normal;
+}
+.personletter_content .personletter_content_line3 i+p{
+	margin-left: 10px!important;
+}
+.personletter_content .personletter_content_line3 p:first-of-type{
+	float: left;
+	margin-left: 15px;
+	margin-top: 17px;
+	color: #333;
+}
+.personletter_content .personletter_content_line3 p:nth-of-type(2){
+	float: right;
+	margin-right: 10px;
+	margin-top: 22px;
+	font-size: 10px;
+	color: #999;
+}
+.personletter_content .personletter_content_line3 p:nth-of-type(3){
+	float: left;
+	clear: both;
+	margin-left: 69px;
+	margin-top: -17px;
+	font-size: 12px;
+	color: #999;
+}
+.personletter_content_2{
+	display: none;
+}

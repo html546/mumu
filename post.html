@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<title>发帖</title>
+		<link rel="stylesheet" href="css/index.css" />
+		<link rel="stylesheet" href="css/post.css" />
+		
+	</head>
+	<body>
+		<!--nav 可复用-->
+		<div class="nav">
+			<p onclick="javascript:history.back(-1);"><img src="images/箭头2.png" alt="" /></p>
+			<p>动态</p>
+		</div>
+		<!--post title-->
+		<div class="post_title">
+			<a href="">取消</a>
+			<p>发布微贴</p>
+			<a href="">发布</a>
+		</div>
+		<!--post content-->
+		<div class="post_content">
+			<textarea placeholder="说点什么..." class="post_content1"></textarea>
+			<p><img src="images/post-6.png"/> <span></span></p>
+			<div class="post_content_line1">
+				<img src="images/post-7.png" alt="" />
+				<img src="images/post-8.png" alt=""/>
+				<img src="images/post-9.png"/>
+			</div>
+		</div>
+		<div class="post_upload">
+			<!--<img src="images/发帖_03.jpg" alt="" />-->
+			<div>
+				<img src="images/发帖_03.png" alt="" />
+				<input type="file" name="img1" class="myfile1" onchange="loadImg1(this,6);"/>
+			</div>
+			<div>
+				<img src="images/发帖_03.png" alt="" />
+				<input type="file" name="img2" class="myfile2" onchange="loadImg1(this,5)"/>
+			</div>
+			<div>
+				<img src="images/发帖_03.png" alt="" />
+				<input type="file" name="img3" class="myfile3" onchange="loadImg1(this,4)"/>
+			</div>
+			<div>
+				<img src="images/发帖_03.png" alt="" />
+				<input type="file" name="img4" class="myfile4" onchange="loadImg1(this,3)"/>
+			</div>
+			<div>
+				<img src="images/发帖_03.png" alt="" />
+				<input type="file" name="img5" class="myfile5" onchange="loadImg1(this,2)"/>
+			</div>
+			<div>
+				<img src="images/发帖_03.png" alt="" />
+				<input type="file" name="img6" class="myfile6" onchange="loadImg1(this,1)"/>
+			</div>
+			<div>
+				<img src="images/发帖_03.png" alt="" />
+				<input type="file" name="img7" class="myfile7" onchange="loadImg1(this,0)"/>
+			</div>
+			<p>您还能上传<span>7</span>张图片</p>
+			<div class="post_info">
+				<h4>温馨提示  :</h4>
+				<p>为了保障用户绿色体验，禁止发布微商或其他广告发布，为了确保用户隐私安全，禁止发布个人微信或手机号码一旦发现违规用户，直接永久拉黑或禁用账号部分功能</p>
+			</div>
+		</div>
+		<!--bottom 可复用-->
+		<div class="mumu_bottom">
+			<div class="mumu_bottom_line1" onclick="javascript:window.location.href='index.html'">
+				<img src="images/tab4.png" alt="穆穆" />
+				<p>穆穆</p>
+			</div>
+			<div class="mumu_bottom_line1" onclick="javascript:window.location.href='nearby.html'">
+				<img src="images/tab3.png" alt="附近" />
+				<p>附近</p>
+			</div>
+			<div class="mumu_bottom_line1" onclick="javascript:window.location.href='personletter.html'">
+				<img src="images/tab2.png" alt="信息" />
+				<p>私信</p>
+			</div>
+			<div class="mumu_bottom_line1 active">
+				<img src="images/tab5-1.png" alt="动态" />
+				<p>动态</p>
+			</div>
+			<div class="mumu_bottom_line1" onclick="javascript:window.location.href='my.html'">
+				<img src="images/tab1.png" alt="我的" />
+				<p>我的</p>
+			</div>
+		</div>
+		<script src="http://api.map.baidu.com/api?v=2.0&ak=IztG20Co7Yi3jnF5IInukAV2GhOMqU70"></script>
+		<script src="js/loadimg.js"></script>
+		<script src="js/jquery.min.js"></script>
+	</body>
+</html>

@@ -1,0 +1,35 @@
+.nav p:first-child img{
+	transform: rotate(180deg);
+	-moz-transform: rotate(180deg);
+	-webkit-transform: rotate(180deg);
+	-ms-transform: rotate(180deg);
+	-o-transfrom:rotate(180deg);
+}
+.nav p:nth-child(2){
+	left: calc((100% - 68px)/2);
+}
+.handbookContent h5{
+	color: #000000;
+	text-indent: 12px;
+	padding: 25px 0px;
+	font-size: 17px;
+	font-weight: bolder;
+}
+.handbookContent p{
+	font-size: 14px;
+	color: #333;
+	width: 94%;
+	margin-left: 3%;
+	text-indent: 28px;
+	letter-spacing: 1px;
+	line-height: 20px;
+	word-break: break-word;
+}
+.handbookContent img{
+	width: 100%;
+	height: 175px;
+	margin-top: 10px;
+}
+.handbookContent img+p{
+	margin-top: 10px;
+}

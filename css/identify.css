@@ -1,0 +1,132 @@
+.nav p:first-child img{
+	transform: rotate(180deg);
+	-moz-transform: rotate(180deg);
+	-webkit-transform: rotate(180deg);
+	-ms-transform: rotate(180deg);
+	-o-transform:rotate(180deg);
+}
+.nav p:nth-child(2){
+	left:calc((100% - 68px)/2);
+}
+.identify_bg{
+	width: 100%;
+	height: 130px;
+	background-image: url(../images/identify_bg.png);
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+	position: relative;
+}
+.identify_bg p{
+	color: #fff;
+}
+.identify_bg p:first-child{
+	position: absolute;
+	top: 46px;
+	left: 25%;
+}
+.identify_bg p:nth-child(2){
+	position: absolute;
+	bottom: 37px;
+	left: 25%;
+}
+.identify_login{
+	width: 100%;
+	height: auto;
+	margin-top: 17px;
+}
+.identify_login p.indetify_login_line1{
+	width: 100%;
+	height: 50px;
+	line-height: 50px;
+	border-top: 1px solid #eee;
+	border-bottom: 1px solid #eee;
+	text-indent: 23px;
+	font-size: 14px;
+	color: #333;
+}
+.identify_login p.indetify_login_line1 input{
+	border: none;
+	font-size: 14px;
+	color: #ccc;
+	text-indent: 16px;
+}
+.identify_pic{
+	width: 94%;
+	height: 180px;
+	border: 1px solid #bfbfbf;
+	margin-left: 3%;
+	margin-top: 12px;
+	position: relative;
+}
+.identify_pic form img:first-of-type{
+	width: 210px;
+	height: 130px;
+	margin-left: calc((100% - 210px)/2);
+	margin-top: 15px;
+}
+.identify_pic form .myfile{
+	width: 100%;
+	height: 180px;
+	opacity: 0;
+	filter: alpha(opacity=0);
+	-moz-opacity: 0;
+	cursor: pointer;
+	outline: none;
+	position: absolute;
+	top: 0px;
+	left: 0px;
+	z-index: 10;
+}
+.identify_pic form img:nth-of-type(2){
+	position: absolute;
+	top: 0px;
+	left: 0px;
+	width: 30px;
+	height: 30px;
+}
+.identify_pic form p:first-of-type{
+	position: absolute;
+	top: 0px;
+	left: 0px;
+	color: #FFFFFF;
+	font-size: 6px;
+}
+.identify_pic form img:nth-of-type(3){
+	width: 65px;
+	height: 65px;
+	position: absolute;
+	top: 35px;
+	left: calc((100% - 65px)/2);
+}
+.identify_pic form p:nth-of-type(2){
+	text-align: center;
+	font-size: 12px;
+	color: #333;
+	margin-top: 10px;
+}
+.identify_pic form p:nth-of-type(2) span{
+	color: #ff0000;
+	font-size: 12px;
+}
+.identify_pic form button:only-of-type{
+	background-image:url(../images/矩形-2-拷贝-3.png);
+	background-repeat: no-repeat;
+	width: 100%;
+	height: 40px;
+	margin-top: 20px;
+	border: none;
+	color: #fff;
+	letter-spacing: 2px;
+}
+.identify_pic form p:nth-of-type(3){
+	font-size: 12px;
+	color: #999;
+	line-height: 1.5;
+	margin-top: 6px;
+}
+@media screen and (device-width:320px) and (device-height:568px) and (-webkit-min-device-pixel-ratio:2){
+	body{
+		height: 115%;
+	}
+}

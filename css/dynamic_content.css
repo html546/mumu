@@ -1,0 +1,288 @@
+.nav p:first-of-type img{
+	transform: rotate(180deg);
+	-moz-transform: rotate(180deg);
+	-webkit-transform: rotate(180deg);
+	-ms-transform: rotate(180deg);
+	-o-transform:rotate(180deg);
+}
+.nav>img{
+	float: right;
+	margin-right: 10px;
+	margin-top: 16px;
+	width: 24px;
+	height: 6px;
+}
+.dynamic_message{
+	width: 100%;
+	height: auto;
+	background: #fff;
+}
+.dynamic_message>img:first-of-type{
+	width: 67px;
+	height: 67px;
+	float: left;
+	border-radius: 5px;
+	margin-left: 10px;
+	margin-top: 16px;
+}
+.dynamic_message>p:first-of-type{
+	float: left;
+	color: #333;
+	font-weight: bold;
+	margin-top: 13px;
+	margin-left: 10px;
+}
+.dynamic_message>img:nth-of-type(2){
+	float: right;
+	margin-right: 15px;
+	margin-top: 16px;
+}
+.dynamic_message p:nth-of-type(2){
+	float: left;
+	font-size: 12px;
+	color: #666;
+	clear: both;
+	margin-left: 87px;
+	margin-top: -44px;
+}
+.dynamic_message .dynamic_attestation{
+	float: left;
+	margin-left: 87px;
+	margin-top: -20px;
+	margin-bottom: 10px;
+}
+.dynamic_message .dynamic_attestation span{
+	float: left;
+	display: inline-block;
+	width: 40px;
+	height: 19px;
+	color: #fff;
+}
+.dynamic_message .dynamic_attestation span{
+	font-size: 10px;
+	padding: 4px 4px 0px 16px;
+	background-repeat: no-repeat;
+	background-size: 6px 12px;
+	background-position: 5px;
+	border-radius: 5px;
+	text-align: center;
+}
+.dynamic_message .dynamic_attestation span:first-child{
+	background-color: #58aefc;
+	background-image: url(../images/图层-9_9.png);
+}
+.dynamic_message .dynamic_attestation span:nth-child(2){
+	background-color: #ff6960;
+	background-image: url(../images/图层-5_5.png);
+	background-size: 13px 13px;
+	background-position: 3px 5px;
+}
+.dynamic_message .dynamic_attestation span:nth-child(3){
+	background-color: #ffcc80;
+	background-image: url(../images/图层-4_4.png);
+	background-size: 14px 14px;
+	background-position: 3px 5px;
+}
+.dynamic_message .dynamic_attestation span:not(:last-child){
+	margin-right: 4px;
+}
+.dynamic_message .dynamic_photo{
+	height: 65px;
+	background: #fff;
+	position: relative;
+}
+.dynamic_message .dynamic_photo>img,.dynamic_message .dynamic_photo #layer-photos-demo>img{
+	float: left;
+	width: 45px;
+	height: 45px;
+	margin-top: 10px;
+	margin-left: 10px;
+}
+.dynamic_message .dynamic_photo #layer-photos-demo>img:first-child{
+	margin-left: 10px;
+}
+.dynamic_message .dynamic_photo #layer-photos-demo>img{
+	margin-right: 3px;
+}
+.dynamic_message .dynamic_photo>img+input[type=file]{
+	position: absolute;
+	width: 45px;
+	height: 45px;
+	top: 10px;
+	left: 10px;
+}
+.dynamic_message .dynamic_photo p{
+	float: right;
+	margin-right: 10px;
+	margin-top: 27px;
+	font-size: 10px;
+	color: #999;
+}
+.dynamic_message .dynamic_photo p img{
+	float: right;
+	width: 6px;
+	height: 10px;
+	margin-left: 5px;
+	margin-top: 2px;
+}
+.dynamic_content{
+	width: 100%;
+	height: auto;
+	background: #fff;
+	margin-top: 15px;
+}
+.dynamic_content .dynamic_content_title{
+	width: 100%;
+	height: 40px;
+	border-bottom: 1px solid #eee;
+	line-height: 40px;
+}
+.dynamic_content .dynamic_content_title p{
+	float: left;
+	width: calc(100%/3);
+	text-align: center;
+}
+.dynamic_content .dynamic_content_title p.actice{
+	color: #ff6960;
+	border-bottom: 1px solid #ff6960;
+}
+.dynamic_content .mate_content{
+	width: 100%;
+	height: 747px;
+	background: #fff;
+}
+.dynamic_content .message_content{
+	width: 100%;
+	height: 954px;
+	background: #fff;
+	display: none;
+}
+.dynamic_content .dynamic_line1{
+	width: 100%;
+	height: 380px;
+	margin-bottom: 50px;
+	background: #fff;
+	display: none;
+}
+.dynamic_content .mate_content p.mate_content_line1,.dynamic_content .message_content p.message_content_line1{
+	float: left;
+	margin-top: 10px;
+	/*margin-left: 11px;*/
+	text-indent: 11px;
+	font-size: 14px;
+	color: #333;
+	letter-spacing: 1px;
+	font-weight: bold;
+	background: #eee;
+	background: #eee;
+	width: 100%;
+	padding: 10px 0px;
+}
+.dynamic_content .mate_content p.mate_content_line1 span,.dynamic_content .message_content p.message_content_line1 span{
+	font-size: 10px;
+	color: #ff6960;
+	margin-left: 11px;
+}
+.dynamic_content .mate_content p.mate_content_line2{
+	float: left;
+	font-size: 14px;
+	color: #333;
+	width: 94%;
+	margin-left: 3%;
+	margin-top: 20px;
+	line-height: 1.5;
+	letter-spacing: 1px;
+	font-weight: bold;
+	margin-bottom: 10px;
+}
+.dynamic_content .mate_content div.mate_content_line3,.dynamic_content .message_content div.message_content_line3{
+	width: 100%;
+	height: 50px;
+	border-bottom: 1px solid #eee;
+	clear: left;
+	position: relative;
+	top: 10px;
+	line-height: 50px;
+}
+.dynamic_content .mate_content div.mate_content_line3 p:first-child,.dynamic_content .message_content div.message_content_line3 p:first-child{
+	float: left;
+	margin-left: 10px;
+	color: #333;
+	font-size: 14px;
+}
+.dynamic_content .mate_content div.mate_content_line3 p:nth-child(2),.dynamic_content .message_content div.message_content_line3 p:nth-child(2){
+	float: right;
+	margin-right: 25px;
+	color: #ff6960;
+	font-size: 14px;
+}
+.dynamic_content .mate_content div.mate_content_line3 p:nth-child(2).nochose,.dynamic_content .message_content div.message_content_line3 p:nth-child(2).nochose{
+	color: #999;
+}
+/*底部*/
+.dynamic_bottom{
+	position: fixed;
+	bottom: 0px;
+	left: 0px;
+	height: 50px;
+	width: 100%;
+	background: #fd5663;
+	color: #fff;
+	line-height: 50px;
+}
+.dynamic_bottom_left{
+	width: calc((100% - 1px)/2);
+	float: left;
+	background: url(../images/图层-1.png);
+	background-repeat: no-repeat;
+	background-size: 20px 19px;
+	background-position: 45px 15px;
+	text-align: center;
+	border-right: 1px solid #fff;
+}
+.dynamic_bottom_right{
+	width: calc((100% - 1px)/2);
+	float: left;
+	text-align: center;
+	background-image: url(../images/图层-2_2.png);
+	background-repeat: no-repeat;
+	background-size: 21px 19px;
+	background-position: 45px 15px;
+}
+/*模态框*/
+.dynamic_dialog2{
+	width: 100%;
+	height: 100%;
+	position: fixed;
+	top: 0px;
+	left: 0px;
+	background: rgba(0,0,0,.3);
+	opacity: 1;
+	display: none;
+}
+.dynamic_dialog2 .dynamic_dialog_line1{
+	width: 300px;
+	height: 90px;
+	background: #fff;
+	margin: 250px auto 0px;
+	border-radius: 5px;
+}
+.dynamic_dialog2 .dynamic_dialog_line1>p{
+	height: 45px;
+	line-height: 45px;
+	text-align: center;
+}
+.dynamic_dialog2 .dynamic_dialog_line1>p:not(:last-child){
+	border-bottom: 1px solid #eee;
+}
+.dynamic_dialog2 .dynamic_dialog_line2{
+	width: 300px;
+	height: 50px;
+	background: #fff;
+	border-radius: 5px;
+	margin: 15px auto 0px;
+}
+.dynamic_dialog2 .dynamic_dialog_line2 p{
+	text-align: center;
+	line-height: 50px;
+}

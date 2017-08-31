@@ -1,0 +1,64 @@
+﻿@charset "utf-8";
+.loan_jm1{width:94%;margin:0 auto;}
+.loan_jm_spa1{width:39%;height:40px;line-height:40px;font-size:1em;color:#666;display:block;float:left;}
+.loan_jm_l1{margin-top:10px;margin-bottom:15px;height:40px;}
+.wbk_srn{width:57%;height:40px;border:1px solid #ccc;background:#FFF;float:left;padding-left:3%;line-height:40px;color:#ADADAD;
+font-size:1.1em; background-size:45%;background-position:center;background:#fff;}
+.wbk_srn b{width:30px;height:40px;border:1px solid #ccc;background:#FFF;float:left;padding-left:3%;line-height:40px;color:#ADADAD;
+font-size:1.1em; background-size:45%;background-position:center;background:url(../images/xl.png) right 5px no-repeat;}
+
+/*城市弹层*/
+.container{width:100%;position:absolute;top:46px;left:0;background-color:#e7e7eb;z-index:9999;display:none;height: calc(100% - 46px);}
+.letter{width:10%;overflow:hidden;line-height:21px;font-size:12px;position:fixed;top:100px;right:10px;text-align:center;}
+.letter ul{list-style-type:none;}
+.letter ul li a{text-decoration:none;}
+.city{width:100%;overflow:hidden;background: #eee;}
+.city-list,.city-list2{width:100%;overflow:hidden;}
+.city-list .city-letter,.city-list2 .city-letter{color:#6e6e6e;font-size:16px;display:inline-block;padding-top:15px;padding-bottom:5px;border-bottom:1px solid #e8ecf1;width:100%;background: #eee;padding-left: 3%;}
+.city-list p{color:#333;width:97%;height:50px;line-height:50px;border-bottom:1px solid #e8ecf1;cursor:pointer;padding-left: 3%;background: #fff;}
+.UISelect{margin-top:5px}
+.container input{
+	width: 94%;
+	position: relative;
+	left: 3%;
+	border: none;
+	height: 30px;
+	color: #9a9a9a;
+	font-size: 14px;
+	margin: 8px 0px;
+	background: #fff;
+	border-radius: 5px;
+	text-align: center;
+	background-image: url(../images/search.png);
+	background-repeat: no-repeat;
+	background-size: 20px 20px;
+	background-position: 35%;
+}
+.city .city-list2:first-child p{
+	width: 80px;
+    height: 40px;
+    line-height: 40px;
+    padding: 0;
+    margin-left: calc(3% + 32px);
+    text-align: center;
+    background: #fff;
+    border-radius: 5px;
+}
+.city .city-list2:nth-child(2) p{
+	width: 80px;
+	height: 40px;
+	text-align: center;
+	padding: 0;
+	line-height: 40px;
+	float: left;
+	margin-right: 5%;
+    margin-bottom: 10px;
+    background: #fff;
+    border-radius: 5px;
+}
+.letter ul li:nth-child(2) a{
+	display: inline-block;
+    white-space: nowrap;
+    font-size: .5rem;
+    width: 30px;
+}

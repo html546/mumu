@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<title>聊天</title>
+		<link rel="stylesheet" href="css/index.css" />
+		<link rel="stylesheet" href="css/chat.css" />
+		<script src="js/jquery.min.js"></script>
+		<style type="text/css">
+			html,body{
+				background: #fff;
+			}
+		</style>
+	</head>
+	<body>
+		<!--nav 可复用-->
+		<div class="nav">
+			<p onclick="javascript:history.back(-1);"><img src="images/箭头2.png" alt="" /></p>
+			<p>晴天</p>
+			<img src="images/聊天_03.png" alt="" onclick="javascript:window.location.href='dynamic_content.html'"/>
+		</div>
+		<!--chat 内容-->
+		<div class="char_content">
+			<p>安全交友提示，切勿和网友发生钱财或者物品借贷关系，
+				对方向您需要联系方式时，请务必谨慎，不要
+			轻易透漏自己的联系方式，以免被骚扰。</p>
+			<p>2017-07-01&nbsp;14:20</p>
+			<div class="char_content_line1">
+				<img src="images/聊天_09.png" alt="" />
+				<img src="images/聊天_07.png" alt="" />
+				<p>你好，很高兴认识你，很高兴认识你很高兴认识你......</p>
+			</div>
+			<div class="char_content_line2">
+				<img src="images/聊天_13.png" alt="" onclick="javascript:window.location.href='dynamic_content.html'" />
+				<img src="images/聊天_17.png" alt="" />
+				<p>你好</p>
+			</div>
+			<p>昨天&nbsp;11:30</p>
+			<div class="char_content_line1">
+				<img src="images/聊天_09.png" alt="" />
+				<img src="images/聊天_07.png" alt="" />
+				<p>有时间一起去看个电影吗</p>
+			</div>
+			<div class="char_content_line2">
+				<img src="images/聊天_13.png" alt="" onclick="javascript:window.location.href='dynamic_content.html'" />
+				<img src="images/聊天_17.png" alt="" />
+				<p>好呀</p>
+			</div>
+		</div>
+		<!--chat bottom-->
+		<div class="chat_bottom">
+			<img src="images/聊天_20.png" alt="" />
+			<input type="text" />
+			<img src="images/聊天_23.png" alt="" />
+			<img src="images/聊天_25.png" alt="" class="char"/>
+			<i></i>
+		</div>
+		<script>
+			$('.char').click(function(){
+				var c = $(this).prevAll().filter('input').val();
+				if(c == ''){
+					return;
+				}
+				$('.char_content').append('<div class="char_content_line2" onclick="javascript:window.location.href=\'dynamic_content.html\'"><img src="images/聊天_13.png"><img src="images/聊天_17.png"><p>'+c+'</p></div>');
+				$(this).prevAll().filter('input').val('');
+			})
+		</script>
+	</body>
+</html>

@@ -1,0 +1,46 @@
+.nav p:nth-child(2){
+	left:calc((100% - 68px)/2);
+}
+.custom_service>p:first-child{
+	text-align: center;
+	font-size: 10px;
+	color: #999;
+	letter-spacing: 1px;
+	margin-top: 25px;
+}
+.custom_service .custom_service1{
+	float: left;
+	margin-bottom: 25px;
+}
+.custom_service .custom_service1 img:first-child{
+	width: 45px;
+	height: 45px;
+	margin-left: 10px;
+	float: left;
+	margin-top: 10px;
+}
+.custom_service .custom_service1 img:nth-child(2){
+	float: left;
+	margin-top: 10px;
+}
+.custom_service .custom_service1 p:only-of-type{
+	background: #fff;
+	font-size: 14px;
+	color: #333;
+	width: 58%;
+	padding: 10px 7px 30px 10px;
+	float: left;
+	margin-left: -15px;
+	margin-top: 15px;
+	border-radius: 10px;
+}
+.custom_service>p:nth-child(3){
+	text-align: center;
+	font-size: 10px;
+	color: #999;
+	letter-spacing: 1px;
+	clear: both;
+}
+.custom_service .custom_service1:nth-child(4) p{
+	padding: 11px 10px 16px 10px;
+}

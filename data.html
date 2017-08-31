@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<title>资料</title>
+		<link rel="stylesheet" href="css/index.css" />
+		<link rel="stylesheet" href="css/dynamic_content.css" />
+		<link rel="stylesheet" href="css/data.css" />
+		<link rel="stylesheet" href="css/mobileSelect.css" />
+		<script src="js/jquery.min.js"></script>
+		<script src="js/mobileSelect.js"></script>
+
+	</head>
+	<body style="background: #fff;">
+		<!--nav 可复用-->
+		<div class="nav">
+			<p onclick="javascript:history.back(-1);"><img src="images/箭头2.png" alt="" /></p>
+			<p>资料</p>
+			<p>保存</p>
+		</div>
+		<!--data content-->
+		<div class="dynamic_content">
+			<div class="data_title">
+				<p class="active">个人资料</p>
+				<p>征友条件</p>
+			</div>
+			<div class="mate_content dynamic1">
+				<p class="mate_content_line1">
+					内心独白<span>1/1</span>
+				</p>
+				<p class="mate_content_line2">
+					<!--内心独白内心独白内心独白内心独白内心独白内心独白内心独白内心独白内心独白内心独白
+					<a href="">编辑</a>-->
+					<textarea></textarea>
+				</p>
+				<p class="mate_content_line1">
+					基本资料<span>8/8</span>
+				</p>
+				<div class="mate_content_line3">
+					<p>我的ID</p>
+					<p>10000<img src="images/右箭头-拷贝.png" alt="" /></p>
+				</div>
+				<div class="mate_content_line3">
+					<p>昵称</p>
+					<p>晴儿<img src="images/右箭头-拷贝.png" alt="" /></p>
+				</div>
+				<div class="mate_content_line3">
+					<p>身高</p>
+					<p><input type="text" value="168cm" id="Height" readonly="readonly"/><img src="images/右箭头-拷贝.png" alt="" /></p>
+				</div>
+				<div class="mate_content_line3">
+					<p>体重</p>
+					<p><input type="text" value="45kg" id="Weight" readonly="readonly"/><img src="images/右箭头-拷贝.png" alt="" /></p>
+				</div>
+				<div class="mate_content_line3">
+					<p>常驻地</p>
+					<p>
+						<input type="text" value="浙江义乌" readonly="readonly" id="abode">
+						<img src="images/右箭头-拷贝.png" alt="" />
+					</p>
+				</div>
+				<div class="mate_content_line3" id="select_contact2">
+					<p>籍贯</p>
+					<p class="nochose">
+						<input type="text" value="未选择" id="nativePlace" readonly="readonly">
+						<img src="images/右箭头-拷贝.png" alt="" />
+					</p>
+				</div>
+				<div class="mate_content_line3">
+					<p>民族</p>
+					<p><input type="text" value="回族" id="nation" readonly="readonly"/><img src="images/右箭头-拷贝.png" alt="" /></p>
+				</div>
+				<div class="mate_content_line3" style="margin-bottom: 10px;">
+					<p>是否信仰伊斯兰教</p>
+					<p><input type="text" value="是" id="faith" readonly="readonly"/><img src="images/右箭头-拷贝.png" alt="" /></p>
+				</div>
+				<p class="mate_content_line1">
+					详细资料<span>6/8</span>
+				</p>
+				<div class="mate_content_line3">
+					<p>学历</p>
+					<p><input type="text" value="大专" id="education" readonly="readonly"/><img src="images/右箭头-拷贝.png" alt="" /></p>
+				</div>
+				<div class="mate_content_line3">
+					<p>毕业院校</p>
+					<p><input type="text" value="北京大学" id="university" readonly="readonly"/><img src="images/右箭头-拷贝.png" alt="" /></p>
+				</div>
+				<div class="mate_content_line3">
+					<p>职业</p>
+					<p><input type="text" value="自由职业者" id="profession" readonly="readonly"/><img src="images/右箭头-拷贝.png" alt="" /></p>
+				</div>
+				<div class="mate_content_line3">
+					<p>月收入</p>
+					<p><input type="text" value="10000元以上" id="rise" readonly="readonly"/><img src="images/右箭头-拷贝.png" alt="" /></p>
+				</div>
+				<div class="mate_content_line3">
+					<p>婚姻状况</p>
+					<p><input type="text" value="未婚" id="marry" readonly="readonly"/><img src="images/右箭头-拷贝.png" alt="" /></p>
+				</div>
+				<div class="mate_content_line3">
+					<p>住房情况</p>
+					<p class="nochose"><input type="text" value="未选择" id="live" readonly="readonly"/><img src="images/右箭头-拷贝.png" alt="" /></p>
+				</div>
+				<div class="mate_content_line3">
+					<p>买车情况</p>
+					<p class="nochose"><input type="text" value="未选择" id="car" readonly="readonly"/><img src="images/右箭头-拷贝.png" alt="" /></p>
+				</div>
+				<div class="mate_content_line3">
+					<p>何时结婚</p>
+					<p><input type="text" value="明年" id="marry2" readonly="readonly"/><img src="images/右箭头-拷贝.png" alt="" /></p>
+				</div>
+				<button>保存</button>
+			</div>
+			<div class="mate_content dynamic2">
+				<p class="mate_content_line1">
+					征友条件<span>11/11</span>
+				</p>
+				<div class="mate_content_line3">
+					<p>年龄</p>
+					<p><input type="text" value="18~30岁" id="ages" readonly="readonly"/><img src="images/右箭头-拷贝.png" alt="" /></p>
+				</div>
+				<div class="mate_content_line3">
+					<p>身高</p>
+					<p><input type="text" value="160~168cm" id="heights" readonly="readonly"/><img src="images/右箭头-拷贝.png" alt="" /></p>
+				</div>
+				<div class="mate_content_line3">
+					<p>籍贯</p>
+					<p><input type="text" value="宁夏银川" id="nativePlace2" readonly="readonly"/><img src="images/右箭头-拷贝.png" alt="" /></p>
+				</div>
+				<div class="mate_content_line3">
+					<p>学历</p>
+					<p><input type="text" value="本科" id="education2" readonly="readonly"/><img src="images/右箭头-拷贝.png" alt="" /></p>
+				</div>
+				<div class="mate_content_line3">
+					<p>信仰</p>
+					<p><input type="text" value="伊斯兰教" id="belief" readonly="readonly"/><img src="images/右箭头-拷贝.png" alt="" /></p>
+				</div>
+				<div class="mate_content_line3">
+					<p>月收入</p>
+					<p><input type="text" id="rise2" value="3000~6000" readonly="readonly"/><img src="images/右箭头-拷贝.png" alt="" /></p>
+				</div>
+				<div class="mate_content_line3">
+					<p>居住地</p>
+					<p><input type="text" value="浙江义乌" id="livePlace" readonly="readonly"/><img src="images/右箭头-拷贝.png" alt="" /></p>
+				</div>
+				<div class="mate_content_line3" style="margin-bottom: 10px;">
+					<p>交往目的</p>
+					<p><input type="text" value="征婚" id="target" readonly="readonly"/><img src="images/右箭头-拷贝.png" alt="" /></p>
+				</div>
+				<div class="mate_content_line3">
+					<p>购房情况</p>
+					<p><input type="text" value="租房" id="live2" readonly="readonly"/><img src="images/右箭头-拷贝.png" alt="" /></p>
+				</div>
+				<div class="mate_content_line3">
+					<p>婚姻状况</p>
+					<p><input type="text" value="未婚" id="marry3" readonly="readonly"/><img src="images/右箭头-拷贝.png" alt="" /></p>
+				</div>
+				<div class="mate_content_line3">
+					<p>希望对方是否有身份认证</p>
+					<p><input type="text" value="是" id="identific" readonly="readonly"/><img src="images/右箭头-拷贝.png" alt="" /></p>
+				</div>
+				<button>保存</button>
+			</div>
+		</div>
+		<!--bottom 可复用-->
+		<div class="mumu_bottom">
+			<div class="mumu_bottom_line1" onclick="javascript:window.location.href='index.html'">
+				<img src="images/tab4.png" alt="穆穆" />
+				<p>穆穆</p>
+			</div>
+			<div class="mumu_bottom_line1" onclick="javascript:window.location.href='nearby.html'">
+				<img src="images/tab3.png" alt="附近" />
+				<p>附近</p>
+			</div>
+			<div class="mumu_bottom_line1" onclick="javascript:window.location.href='personletter.html'">
+				<img src="images/tab2.png" alt="信息" />
+				<p>私信</p>
+			</div>
+			<div class="mumu_bottom_line1">
+				<img src="images/tab5.png" alt="动态" onclick="javascript:window.location.href='dynamic.html'"/>
+				<p>动态</p>
+			</div>
+			<div class="mumu_bottom_line1 active">
+				<img src="images/tab1-1.png" alt="我的" />
+				<p>我的</p>
+			</div>
+		</div>
+		<div class="model">
+			<div class="modelBox">
+				<p>请输入你的职业</p>
+				<input type="text" id="profession2" onchange="inputChange()"/>
+				<button class="yes">确定</button>
+				<button class="cancel">取消</button>
+			</div>
+		</div>
+		<script src="js/data.js"></script>
+		<script>
+			$(function(){
+				$('.data_title p').click(function(){
+					$(this).addClass('active').siblings('p').removeClass('active');
+					if($(this).index()==0){
+						$('.dynamic1').show().next('.dynamic2').hide();
+					}else if($(this).index()==1){
+						$('.dynamic2').show().prev('.dynamic1').hide();
+					}
+				})
+				$('#profession').click(function(){
+					$('.model').show();
+				})
+			})
+			function inputChange(event){
+				var c = document.getElementById('profession2').value;
+				document.getElementsByClassName('yes')[0].onclick=function(){
+					document.getElementById('profession').value = c;
+					document.getElementsByClassName('model')[0].style.display = 'none';
+				}
+				document.getElementsByClassName('cancel')[0].onclick=function(){
+					document.getElementsByClassName('model')[0].style.display = 'none';
+					return false;
+				}
+			}
+		</script>
+	</body>
+</html>

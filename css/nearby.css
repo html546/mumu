@@ -1,0 +1,97 @@
+.nav p:first-of-type img{
+	transform: rotate(180deg);
+	-ms-transform: rotate(180deg);
+	-o-transform:rotate(180deg);
+	-moz-transform: rotate(180deg);
+	-webkit-transform: rotate(180deg);
+}
+/*nearby内容*/
+.mumu_nearby_content{
+	width: 100%;
+	height: auto;
+}
+.mumu_nearby_content .mumu_nearby_content1{
+	width: 100%;
+	height: auto;
+}
+.mumu_nearby_content .mumu_nearby_content1>img{
+	width: 76px;
+	height: 76px;
+	border-radius: 50%;
+	float: left;
+	margin-left: 10px;
+	margin-top: 13px;
+}
+.mumu_nearby_content .mumu_nearby_content1 p:first-of-type{
+	float: left;
+	margin-top: 23px;
+	margin-left: 6px;
+}
+.mumu_nearby_content .mumu_nearby_content1 p:first-of-type span{
+	width: 38px;
+	height: 15px;
+	background: #58aefc;
+	color: #fff;
+	font-size: 10px;
+	display: inline-block;
+	text-align: center;
+	line-height: 15px;
+	border-radius: 6px;
+	margin-left: 10px;
+}
+.mumu_nearby_content .mumu_nearby_content1 p:nth-of-type(2){
+	float: right;
+	margin-right: 13px;
+}
+.mumu_nearby_content .mumu_nearby_content1 p:nth-of-type(2) img{
+	width: 10px;
+	height: 15px;
+	float: left;
+	margin-top: 24px;
+	margin-right: 4px;
+}
+.mumu_nearby_content .mumu_nearby_content1 p:nth-of-type(2) span{
+	float: left;
+	margin-top: 24px;
+	font-size: 10px;
+	color: #999;
+}
+.mumu_nearby_content .mumu_nearby_content1 p:nth-of-type(3){
+	float: left;
+	margin-left: 6px;
+	margin-top: 9px;
+	font-size: 12px;
+	color: #999;
+}
+.mumu_nearby_content .mumu_nearby_content1 p:nth-of-type(4){
+	float: left;
+	font-size: 14px;
+	color: #666;
+	margin-top: 2px;
+	margin-left: 6px;
+	margin-bottom: 15px;
+}
+.mumu_nearby_content .mumu_nearby_content1 p:nth-of-type(4) span{
+	display: inline-block;
+	width: 55px;
+	height: 19px;
+	background: #f55d54;
+	color: #fff;
+	text-align: center;
+	line-height: 19px;
+	border-radius: 6px;
+	font-size: 14px;
+	margin-left: 20px;
+}
+@media screen and (device-width:320px) and (device-height:568px) and (-webkit-device-pixel-ratio:2){
+	.mumu_nearby_content .mumu_nearby_content1 p:nth-of-type(4){
+		margin-left: 91px;
+	    margin-top: -14px;
+	    font-size: 12px;
+	}
+	.mumu_nearby_content .mumu_nearby_content1 p:nth-of-type(4) span{
+		float: right;
+		margin-top: -18px;
+		font-size: 12px;
+	}
+}

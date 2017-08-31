@@ -1,0 +1,23 @@
+.nav p:first-child img{
+	transform: rotate(180deg);
+	-moz-transform: rotate(180deg);
+	-webkit-transform: rotate(180deg);
+	-ms-transform: rotate(180deg);
+	-o-transform:rotate(180deg);
+}
+.nav p:nth-of-type(2){
+	left: calc((100% - 68px)/2);
+}
+@media screen and (device-width:320px) and (device-height:568px) and (-webkit-min-device-pixel-ratio:2) {
+	.mumu_nearby_content .mumu_nearby_content1 p:nth-of-type(2){
+		margin-right: 0px;
+	}
+	.mumu_nearby_content .mumu_nearby_content1 p:nth-of-type(4){
+		margin-left: 86px;
+		white-space: nowrap;
+		margin-top: -15px;
+	}
+	.mumu_nearby_content .mumu_nearby_content1 p:first-of-type span{
+		margin-left: 5px;
+	}
+}

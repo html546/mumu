@@ -1,0 +1,64 @@
+.nav p:first-child img{
+	transform: rotate(180deg);
+	-moz-transform: rotate(180deg);
+	-webkit-transform: rotate(180deg);
+	-ms-transform: rotate(180deg);
+	-o-transform:rotate(180deg);
+}
+.nav p:nth-child(2){
+	left: calc((100% - 68px)/2);
+}
+.attestation{
+	width: 100%;
+	height: auto;
+}
+.attestation .attestation_bg{
+	width: 100%;
+	height: 130px;
+	background-image: url(../images/图片.png);
+	background-repeat: no-repeat;
+	background-position: center center;
+	background-size: cover;
+	position: relative;
+}
+.attestation .attestation_bg p:only-child{
+	position: absolute;
+	bottom:15px;
+	text-align: center;
+	width: 100%;
+	font-size: 12px;
+	color: #fff;
+}
+.attestation .attestion_line{
+	width: 100%;
+	height: 50px;
+	border-bottom: 1px solid #eee;
+}
+.attestation .attestion_line p:first-child{
+	float: left;
+	line-height: 50px;
+	color: #333;
+	font-size: 14px;
+}
+.attestation .attestion_line p:first-child img{
+	float: left;
+	width: 11px;
+	height: 20px;
+	margin-left: 10px;
+	margin-top: 15px;
+	margin-right: 15px;
+}
+.attestation .attestion_line:nth-child(3) p:first-child img{
+	width: 20px;
+	height: 20px;
+	margin-right: 5px;
+}
+.attestation .attestion_line p:nth-child(2){
+	float: right;
+	margin-right: 10px;
+}
+.attestation .attestion_line p:nth-child(2) img{
+    width: 6px;
+    height: 10px;
+    margin-top: 20px;
+}

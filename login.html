@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />	
+		<title>登录</title>
+		<link rel="stylesheet" href="css/login.css" />
+		<link href='http://cdn.webfont.youziku.com/webfonts/nomal/105636/47065/5994fa0ff629d8056cf4cb07.css' rel='stylesheet' type='text/css' />
+		<script src="js/jquery.min.js"></script>
+	</head>
+	<body>
+		<img src="images/login-logo.png" alt="" class="logo"/>
+		<h4 class="cssc931a147719ca4">中国穆民第一社交平台</h4>
+		<p>交友相亲|同城老乡|生活服务</p>
+		<p class="chose">请选择您的性别</p>
+		<div class="btn_group">
+			<button class="active">男</button>
+			<button>女</button>
+		</div>
+		<button class="btn_bottom" onclick="javascript:window.location.href='index.html'">进入穆穆</button>
+		<script>
+			$(function(){
+				$('.btn_group button').click(function(){
+					$(this).addClass('active').siblings('button').removeClass('active');
+				})
+			})
+		</script>
+	</body>
+</html>

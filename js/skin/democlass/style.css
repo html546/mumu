@@ -1,0 +1,27 @@
+body .layer-ext-democlass,body .democlass2{
+	background: #eee;
+}
+body .layer-ext-democlass .layui-layer-title,body .democlass2 .layui-layer-title{
+	text-align: center;
+	padding: 0;
+	width: 100%;
+	color: #ff6960;
+	background: none;
+}
+body .layer-ext-democlass .layui-layer-content,body .democlass2 .layui-layer-content{
+	text-align: center;
+	color: #ff6960;
+}
+body .layer-ext-democlass .layui-layer-btn .layui-layer-btn0{
+	color: #ff6960;
+	background: none;
+	border: none;
+}
+body .layer-ext-democlass .layui-layer-btn .layui-layer-btn1{
+	color: #ff6960;
+	background: none;
+	border: none;
+}
+body .democlass2 .layui-layer-btn{
+	display: none;
+}

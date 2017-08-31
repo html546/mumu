@@ -1,0 +1,100 @@
+.nav p:first-child img{
+	transform: rotate(180deg);
+	-moz-transform: rotate(180deg);
+	-webkit-transform: rotate(180deg);
+	-ms-transform: rotate(180deg);
+	-o-transform:rotate(180deg);
+}
+.nav p:nth-child(2){
+	left:calc((100% - 68px)/2);
+}
+/*requset_bg*/
+.request_bg{
+	background-image: url(../images/邀请好友_02.jpg);
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+	width: 100%;
+	height: 130px;
+}
+.request_bg .requset_bg_line1:first-child{
+	width: 50%;
+	float: left;
+	color: #FFFFFF;
+}
+.request_bg .requset_bg_line1:nth-child(2){
+	width: 50%;
+	float: right;
+	color: #FFFFFF;
+}
+.request_bg .requset_bg_line1:first-child p:first-of-type,.request_bg .requset_bg_line1:nth-child(2) p:first-of-type{
+	float: left;
+	margin-left: calc((100% - 48px)/2);
+	margin-top: 35px;
+}
+.request_bg .requset_bg_line1:first-child p:nth-of-type(2),.request_bg .requset_bg_line1:nth-child(2) p:nth-of-type(2){
+	float: left;
+	clear: left;
+	margin-left: calc((100% - 26px)/2);
+	margin-top: 10px;
+	font-size: 18px;
+}
+.request_bg .requset_bg_line1:first-child p:nth-of-type(2) span,.request_bg .requset_bg_line1:nth-child(2) p:nth-of-type(2) span{
+	color: #ff0000;
+	font-size: 14px;
+}
+/*领取会员*/
+.request_members{
+	width: 100%;
+	height: 90px;
+	border-bottom: 1px solid #bfbfbf;
+}
+.request_members button{
+	width: 125px;
+	height: 37px;
+	background: #ff6960;
+	color: #fff;
+	font-size: 14px;
+	border: none;
+	border-radius: 5px;
+	margin-left: calc((100% - 125px)/2);
+	margin-top: 23px;
+}
+.request_members p{
+	text-align: center;
+	font-size: 12px;
+	color: #333;
+	margin-top: 7px;
+}
+.request_members p span{
+	font-size: 12px;
+	color: #333;
+}
+/*活动规则*/
+.request_rules,.request_flow{
+	width: 94%;
+	margin-left: 3%;
+	height: auto;
+	margin-bottom: 50px;
+}
+.request_rules h4,.request_flow h4{
+	margin-top: 42px;
+	font-size: 14px;
+	color: #333;
+}
+.request_flow h4{
+	margin-top: 35px;
+}
+.request_rules p,.request_flow p{
+	font-size: 12px;
+	color: #666;
+	line-height: 1.5;
+}
+.request_rules p:first-of-type,.request_flow p:first-of-type{
+	margin-top: 18px;
+}
+@media screen and (device-width:320px) and (device-height:568px) and (-webkit-min-device-pixel-ratio:2){
+	body{
+		height: 115%;
+	}
+}

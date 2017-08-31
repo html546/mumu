@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<title>搜索条件</title>
+		<link rel="stylesheet" href="css/index.css" />
+		<link rel="stylesheet" href="css/filter.css" />
+		<link rel="stylesheet" href="css/mobileSelect.css" />
+		<link rel="stylesheet" href="css/iosSelect.css" />
+		<script src="js/jquery.min.js"></script>
+		<script src="js/mobileSelect.js"></script>
+		<script src="js/zepto.js"></script>
+		<script src="js/iscroll.js"></script>
+		<script src="js/areaData_v2.js"></script>
+		<script src="js/iosSelect.js"></script>
+	</head>
+	<body style="background: #fff;">
+		<!--nav 可复用-->
+		<div class="nav">
+			<p onclick="javascript:history.back(-1);"><img src="images/箭头2.png" alt="" /></p>
+			<p>搜索条件</p>
+			<p>完成</p>
+		</div>
+		<!--filter group-->
+		<div class="filter_group">
+			<div class="filter_group1">
+				<img src="images/filter-3.png" alt="" />
+				<p>找老乡</p>
+			</div>
+			<div class="filter_group1">
+				<img src="images/filter-2.png" alt="" />
+				<p>找同行</p>
+			</div>
+			<div class="filter_group1">
+				<img src="images/filter-1.png" alt="" />
+				<p>认证用户</p>
+			</div>
+		</div>
+		<!--filter content-->
+		<div class="filter_content">
+			<ul>
+				<li id="sex">
+					<div>性别</div>
+					<div><span>不限</span><img src="images/右箭头-拷贝.png" alt="" /></div>
+					<div class="clear"></div>
+					<input type="text" id="sex2" readonly="readonly"/>
+				</li>
+				<li id="age">
+					<div>年龄</div>
+					<div><span>不限</span><img src="images/右箭头-拷贝.png" alt=""/></div>
+					<div class="clear"></div>
+					<input type="text" id="age2" readonly="readonly"/>
+				</li>
+				<li id="height">
+					<div>身高</div>
+					<div><span>不限</span><img src="images/右箭头-拷贝.png" alt="" /></div>
+					<div class="clear"></div>
+					<input type="text" id="height2" readonly="readonly"/>
+				</li>
+				<li id="select_contact">
+					<div>居住地</div>
+					<div>
+						<input type="hidden" name="contact_province_code" data-id="0001" id="contact_province_code" value="" data-province-name="">
+        				<input type="hidden" name="contact_city_code" id="contact_city_code" value="" data-city-name="">
+						<span id="show_contact">不限</span>
+						<img src="images/右箭头-拷贝.png" alt="" />
+					</div>
+					<div class="clear"></div>
+				</li>
+				<li id="eduction">
+					<div>学历</div>
+					<div><span>不限</span><img src="images/右箭头-拷贝.png" alt="" /></div>
+					<div class="clear"></div>
+					<input type="text" id="eduction2" readonly="readonly">
+				</li>
+				<li id="income">
+					<div>月收入</div>
+					<div><span>不限</span><img src="images/右箭头-拷贝.png" alt="" /></div>
+					<div class="clear"></div>
+					<input type="text" readonly="readonly" id="income2"/>
+				</li>
+				<li id="marriage">
+					<div>婚姻状况</div>
+					<div><span>不限</span><img src="images/右箭头-拷贝.png" alt="" /></div>
+					<div class="clear"></div>
+					<input type="text" readonly="readonly" id="marriage2"/>
+				</li>
+			</ul>
+		</div>
+		<script>
+			var mobileSelect = new MobileSelect({
+				trigger:'#age2',
+				title:'年龄选择',
+				wheels:[
+					{
+						data:[16,17,18,19,20,21,22,23,24,25,26,27,28,29,30,31,32,33,34,35,36,37,38,39,40,41,42,43,44,45,46,47,48,49,50]
+					},
+					{
+						data:[16,17,18,19,20,21,22,23,24,25,26,27,28,29,30,31,32,33,34,35,36,37,38,39,40,41,42,43,44,45,46,47,48,49,50]
+					}
+				],
+				callback:function(indexArr,data){
+					var c = data[0]+'-'+data[1];
+					$('#age').children('div:odd').find('span').text(c);
+				}
+			})
+			var mobileSelect2 = new MobileSelect({
+				trigger:'#height2',
+				title:'身高选择',
+				wheels:[
+					{
+						data:[160,161,162,163,164,165,166,167,168,169,170,171,172,173,174,175,176,177,178,179,180,181,182,183,184,185]
+					},
+					{
+						data:[160,161,162,163,164,165,166,167,168,169,170,171,172,173,174,175,176,177,178,179,180,181,182,183,184,185]
+					}
+				],
+				callback:function(indexArr,data){
+					console.log(data);
+					var c = data[0]+'-'+data[1];
+					$('#height').children('div:odd').find('span').text(c);
+				}
+			})
+			var mobileSelect3 = new MobileSelect({
+				trigger:'#income2',
+				title:'月收入选择',
+				wheels:[
+					{
+						data:[1000,2000,3000,4000,5000,6000,7000,8000,9000,10000,'1万以上']
+					},
+					{
+						data:[1000,2000,3000,4000,5000,6000,7000,8000,9000,10000,'1万以上']
+					}
+				],
+				callback:function(indexArr,data){
+					console.log(data);
+					var c = data[0]+'-'+data[1];
+					$('#income').children('div:odd').find('span').text(c);
+				}
+			})
+			var mobileSelect4 = new MobileSelect({
+				trigger:'#sex2',
+				title:'性别选择',
+				wheels:[
+					{data:['男','女']}
+				],
+				position:[0],
+				callback:function(indexArr,data){
+					$('#sex').children('div:odd').find('span').text(data);
+				}
+			})
+			var mobileSelect5 = new MobileSelect({
+				trigger:'#eduction2',
+				title:'学历选择',
+				wheels:[
+					{data:['初中','高中','大专','本科']}
+				],
+				position:[0],
+				callback:function(indexArr,data){
+					$('#eduction').children('div:odd').find('span').text(data);
+				}
+			})
+			var mobileSelect6 = new MobileSelect({
+				trigger:'#marriage2',
+				title:'婚姻状况',
+				wheels:[
+					{data:['是','否']}
+				],
+				position:[0],
+				callback:function(indexArr,data){
+					$('#marriage').children('div:odd').find('span').text(data);
+				}
+			})
+			var selectContactDom = $('#select_contact');
+		    var showContactDom = $('#show_contact');
+		    var contactProvinceCodeDom = $('#contact_province_code');
+		    var contactCityCodeDom = $('#contact_city_code');
+		    selectContactDom.bind('click', function () {
+		        var sccode = showContactDom.attr('data-city-code');
+		        var scname = showContactDom.attr('data-city-name');
+
+		        var oneLevelId = showContactDom.attr('data-province-code');
+		        var twoLevelId = showContactDom.attr('data-city-code');
+		        var iosSelect = new IosSelect(2,
+		            [iosProvinces, iosCitys],
+		            {
+		                title: '地址选择',
+		                itemHeight: 35,
+		                relation: [1, 1, 0, 0],
+		                oneLevelId: oneLevelId,
+		                twoLevelId: twoLevelId,
+		                callback: function (selectOneObj, selectTwoObj) {
+		                    contactProvinceCodeDom.val(selectOneObj.id);
+		                    contactProvinceCodeDom.attr('data-province-name', selectOneObj.value);
+		                    contactCityCodeDom.val(selectTwoObj.id);
+		                    contactCityCodeDom.attr('data-city-name', selectTwoObj.value);
+
+		                    showContactDom.attr('data-province-code', selectOneObj.id);
+		                    showContactDom.attr('data-city-code', selectTwoObj.id);
+		                    showContactDom.html(selectOneObj.value + ' ' + selectTwoObj.value);
+		                }
+		        });
+		    });
+		</script>
+	</body>
+</html>

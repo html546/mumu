@@ -1,0 +1,35 @@
+.nav p:first-child img{
+	transform: rotate(90deg);
+	-moz-transform: rotate(90deg);
+	-webkit-transform: rotate(90deg);
+	-ms-transform: rotate(90deg);
+	-o-transform:rotate(90deg);
+}
+.nav a:nth-child(3){
+	float: right;
+	font-size: 16px;
+	color: #ff6960;
+	line-height: 45px;
+	margin-right: 15px;
+}
+.jq22{
+	background: #fff;
+	margin-top: 18px;
+}
+.jq22 .combo-select{
+	border: none;
+}
+.report_reason{
+	width: 100%;
+	height: 100px;
+	background: #fff;
+}
+.report_reason textarea{
+	width: 94%;
+	margin-left: 3%;
+	border: none;
+	resize: none;
+	padding-top: 10px;
+	font-size: 14px;
+	color: #999;
+}

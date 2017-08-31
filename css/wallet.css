@@ -1,0 +1,99 @@
+.nav p:first-child img{
+	transform: rotate(180deg);
+	-moz-transform: rotate(180deg);
+	-webkit-transform: rotate(180deg);
+	-ms-transform: rotate(180deg);
+	-o-transform:rotate(180deg);
+}
+.nav p:nth-of-type(2){
+	left: calc((100% - 68px)/2);
+}
+/*wallet panel*/
+.wallet_panel{
+	width: 100%;
+	height: 130px;
+}
+.wallet_panel .wallet_panel_left,.wallet_panel .wallet_panel_right{
+	width: calc((100% - 1px)/2);
+	float: left;
+	background: #545861;
+	color: #fff;
+	height: 100%;
+}
+.wallet_panel .wallet_panel_left p,.wallet_panel .wallet_panel_right p{
+	text-align: center;
+}
+.wallet_panel .wallet_panel_right{
+	float: right;
+}
+.wallet_panel .wallet_panel_left p:first-child,.wallet_panel .wallet_panel_right p:first-child{
+	margin-top: 43px;
+}
+.wallet_panel .wallet_panel_left p:nth-child(2),.wallet_panel .wallet_panel_right p:nth-child(2){
+	margin-top: 10px;
+}
+/*wallet content*/
+.wallet_content{
+	width: 100%;
+	height: calc(100% - 241px);
+	background: #fff;
+	margin-top: 15px;
+	margin-bottom: 50px;
+}
+@media screen and (device-width:320px) and (device-height:568px) and (-webkit-min-device-pixel-ratio:2) {
+	.wallet_content{
+		height: calc(100% - 180px);
+	}
+}
+.wallet_content .wallet_content_line{
+	width: 100%;
+	height: 50px;
+	border-bottom: 1px solid #eee;
+}
+.wallet_content .wallet_content_line p:first-child{
+	float: left;
+	margin-left: 15px;
+	line-height: 50px;
+	font-size: 14px;
+	color: #000033;
+}
+.wallet_content .wallet_content_line p:first-child img{
+	width: 20px;
+	height: 22px;
+	margin-top: 14px;
+	float: left;
+	margin-right: 11px;
+}
+.wallet_content .wallet_content_line p:nth-child(2){
+	float: right;
+	margin-right: 10px;
+}
+.wallet_content .wallet_content_line p:nth-child(2) img{
+	width: 6px;
+    height: 10px;
+    margin-top: 20px;
+}
+/*wallet distribute*/
+.wallet_content .wallet_distribute{
+	width: 94%;
+	margin-left: 3%;
+}
+.wallet_content .wallet_distribute p:first-child{
+	margin-top: 32px;
+	font-size: 14px;
+	color: #666;
+}
+.wallet_content .wallet_distribute p:nth-child(2){
+	margin-top: 17px;
+	font-size: 10px;
+	color: #666;
+}
+.wallet_content .wallet_distribute p:nth-child(3){
+	font-size: 10px;
+	color: #666;
+}
+.wallet_content .wallet_distribute p:nth-child(4){
+	margin-top: 17px;
+	color: #666666;
+	font-size: 10px;
+}

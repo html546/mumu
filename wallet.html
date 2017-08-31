@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<title>我的钱包</title>
+		<link rel="stylesheet" href="css/index.css" />
+		<link rel="stylesheet" href="css/wallet.css" />
+		<script src="js/jquery.min.js"></script>
+	</head>
+	<body>
+		<!--nav 可复用-->
+		<div class="nav">
+			<p onclick="javascript:history.back(-1);"><img src="images/箭头2.png" alt="" /></p>
+			<p>我的钱包</p>
+		</div>
+		<!--wallet panel-->
+		<div class="wallet_panel">
+			<div class="wallet_panel_left">
+				<p>总收入</p>
+				<p>￥ 0.00</p>
+			</div>
+			<div class="wallet_panel_right">
+				<p>余额</p>
+				<p>￥ 0.00</p>
+			</div>
+		</div>
+		<!--wallet content-->
+		<div class="wallet_content">
+			<div class="wallet_content_line" onclick="javascript:window.location.href='withdrawals.html'">
+				<p><img src="images/wallet-1.png" alt="" />赏金提现</p>
+				<p><img src="images/右箭头-拷贝.png" alt="" /></p>
+			</div>
+			<div class="wallet_content_line" onclick="javascript:window.location.href='received.html'">
+				<p><img src="images/wallet-2.png" alt="" />收到打赏</p>
+				<p><img src="images/右箭头-拷贝.png" alt="" /></p>
+			</div>
+			<div class="wallet_content_line" onclick="javascript:window.location.href='emit.html'">
+				<p><img src="images/wallet-3.png" alt="" />发出打赏</p>
+				<p><img src="images/右箭头-拷贝.png" alt="" /></p>
+			</div>
+			<div class="wallet_content_line" onclick="javascript:window.location.href='withdrawDetail.html'">
+				<p><img src="images/wallet-4.png" alt="" />提现明细</p>
+				<p><img src="images/右箭头-拷贝.png" alt="" /></p>
+			</div>
+			<!--wallet distribute-->
+			<div class="wallet_distribute">
+				<p>关于赏金分配</p>
+				<p>内容发布者=80</p>
+				<p>平台服务者=20%</p>
+				<p>赏金超过1元起提现，用户申请提现后，系统自动提现到您的微信钱包</p>
+			</div>
+		</div>
+		<!--bottom 可复用-->
+		<div class="mumu_bottom">
+			<div class="mumu_bottom_line1" onclick="javascript:window.location.href='index.html'">
+				<img src="images/tab4.png" alt="穆穆" />
+				<p>穆穆</p>
+			</div>
+			<div class="mumu_bottom_line1" onclick="javascript:window.location.href='nearby.html'">
+				<img src="images/tab3.png" alt="附近" />
+				<p>附近</p>
+			</div>
+			<div class="mumu_bottom_line1" onclick="javascript:window.location.href='personletter.html'">
+				<img src="images/tab2.png" alt="信息" />
+				<p>私信</p>
+			</div>
+			<div class="mumu_bottom_line1">
+				<img src="images/tab5.png" alt="动态" onclick="javascript:window.location.href='dynamic.html'"/>
+				<p>动态</p>
+			</div>
+			<div class="mumu_bottom_line1 active">
+				<img src="images/tab1-1.png" alt="我的" />
+				<p>我的</p>
+			</div>
+		</div>
+	</body>
+</html>

@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<title>购物车</title>
+		<link rel="stylesheet" href="css/index.css" />
+		<link rel="stylesheet" href="css/shopingcar.css" />
+		<!--<link rel="stylesheet" href="css/checkbix.min.css" />-->
+		<script src="js/jquery.min.js"></script>
+		<script src="js/vue.js"></script>
+	</head>
+	<body>
+		<!--nav 可复用-->
+		<div class="nav">
+			<p onclick="javascript:history.back(-1);"><img src="images/箭头2.png" alt="" /></p>
+			<p>购物车</p>
+		</div>
+		<!--购物车-->
+		<div class="shopping">
+			<div v-for="(item,index) in items">
+				<div class="shoping_line_control">
+					<p v-if="item.edit" @click="compile(index)">编辑</p>
+					<p v-else @click="complete(index)">完成</p>
+				</div>
+				<div class="shoping_line">
+					<!--<input id="mycheckbox8" type="checkbox" class="checkbix" data-shape="circled" data-color="orange" data-text="" checked>-->
+					<div class="check">
+						<input type="checkbox" v-model="item.checked" :id="['myCheck'+item.check]" @click="mCheck(index)"/>
+						<label :for="['myCheck'+item.check]" ></label>
+					</div>
+					<img :src="item.src"/>
+					<div class="theme" v-if="item.edit">
+						<h4>{{item.title}}</h4>
+						<p>￥<span>{{item.price}}</span></p><del>{{item.del}}</del>
+						<p>×<span>{{item.textData}}</span></p>
+					</div>
+					<div class="theme2" v-else>
+						<input type="button" value="-" class="min" @click="min(index)"/>
+						<input type="text" :value="item.textData" class="data"/>
+						<input type="button" value="+" class="max" @click="max(index)"/>
+						<button @click="cancel(index)">删除</button>
+					</div>
+				</div>
+			</div>
+			<div class="checkAll">
+				<input type="checkbox" id="AlCheck" @click="checkAll" v-model="alCheck"/>
+				<label for="AlCheck"></label>
+				<p>合计: ￥<span>{{allPrice}}</span></p>
+				<button>结算</button>
+			</div>
+		</div>
+		<script>
+			new Vue({
+				el:'.shopping',
+				data:{
+					edit:false,
+					allPrice:0,
+					alCheck:false,
+					items:[
+						{src:'images/发帖_03.jpg',title:'满婷去螨虫洗面奶满婷控油祛痘面部去除螨虫痘痘粉刺清理毛孔黑头',price:38.00,del:110.80,textData:1,edit:true,check:0,checked:false},
+						{src:'images/发帖_03.jpg',title:'迪威诺睡袋成人户外室内单人秋冬保暖加厚便携宾馆露营旅行隔脏',price:29.00,del:50.00,textData:1,edit:true,check:1,checked:false},
+						{src:'images/发帖_03.jpg',title:'BDG男友风格子衬衫 Urban Outfitters宽松舒适oversize蝙蝠袖罩衫',price:124,del:350,textData:1,edit:true,check:2,checked:false}
+					]
+				},
+				methods:{
+					min:function($index){
+						if(this.items[$index].textData == 1){
+							return false;
+						}
+						this.items[$index].textData--;
+						this.calcTotalPrice();
+					},
+					max:function($index){
+						this.items[$index].textData++;
+						this.calcTotalPrice();
+					},
+					complete:function($index){
+						console.log($index);
+						this.items[$index].edit = true;
+					},
+					compile:function($index){
+						console.log($index);
+						this.items[$index].edit = false;
+					},
+					cancel:function($index){
+						this.items.splice($index,1);
+						this.calcTotalPrice();
+					},
+					mCheck:function($index){
+						this.items[$index].checked = !this.items[$index].checked;
+						this.calcTotalPrice();
+					},
+					checkAll:function(){
+						this.alCheck = !this.alCheck;
+						var vm = this;
+						vm.items.forEach(function(item){
+							item.checked = vm.alCheck;
+						})
+						this.calcTotalPrice();
+					},
+					calcTotalPrice:function(){
+						var _this = this;
+						this.allPrice = 0;
+						this.items.forEach(function(item,index){
+							if(item.checked){
+								_this.allPrice += item.price * item.textData
+							}
+						})
+					}
+				}
+			})
+		</script>
+	</body>
+</html>

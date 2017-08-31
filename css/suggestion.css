@@ -1,0 +1,34 @@
+.nav p:first-child img{
+	transform: rotate(180deg);
+	-moz-transform: rotate(180deg);
+	-webkit-transform: rotate(180deg);
+	-ms-transform: rotate(180deg);
+	-o-transform:rotate(180deg);
+}
+.nav p:nth-child(2){
+	left:calc((100% - 68px)/2);
+}
+.nav a:nth-child(3){
+	float: right;
+	font-size: 16px;
+	color: #ff6960;
+	line-height: 45px;
+	margin-right: 15px;
+}
+.advice{
+	width: 100%;
+	height: 135px;
+	background: #fff;
+	margin-top: 15px;
+}
+.advice textarea{
+	width: 94%;
+	margin-left: 3%;
+	resize: none;
+	height: 123px;
+	border: none;
+	font-size: 14px;
+	color: #999;
+	line-height: 1.5;
+	padding-top: 12px;
+}

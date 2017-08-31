@@ -1,0 +1,42 @@
+.custom_service .custom_service1 p:only-of-type{
+	padding: 10px 8px 10px 10px;
+}
+.custom_service .custom_service1:nth-child(4) p a{
+	color: #00549c;
+	font-size: 14px;
+}
+.custom_service p:nth-child(5){
+	clear: both;
+	width: 100%;
+	text-align: center;
+	font-size: 10px;
+	color: #999;
+}
+.custom_service .custom_service2{
+	background-color: #FFFFFF;
+	background-image: url(../images/穆穆助手-图片.png);
+	background-repeat: no-repeat;
+	background-size: 94%;
+	background-position: center 80%;
+	height: 200px;
+	width: 94%;
+	margin-left: 3%;
+	margin-top: 15px;
+	border-radius: 5px;
+	position: relative;
+}
+.custom_service .custom_service2 p:only-of-type{
+	position: absolute;
+	color: #333;
+	top: 7px;
+	width: 94%;
+	margin-left: 3%;
+	line-height: 1.5;
+	font-size: 14px;
+}
+@media screen and (device-width:320px) and (device-height:568px) and (-webkit-min-device-pixel-ratio:2){
+	.custom_service .custom_service2{
+		background-position: center 60%;
+		margin-bottom: 50px;
+	}
+}

@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<title>举报</title>
+		<link rel="stylesheet" href="css/index.css" />
+		<link rel="stylesheet" href="css/report.css" />
+		<link rel="stylesheet" href="css/combo.select.css" />
+		<script src="js/jquery.min.js"></script>
+		<script src="js/jquery.combo.select.js"></script>
+	</head>
+	<body>
+		<!--nav 可复用-->
+		<div class="nav">
+			<p onclick="javascript:history.back(-1);"><img src="images/arrawbottom.png" alt="" /></p>
+			<p>举报</p>
+			<a href="">完成</a>
+		</div>
+		<!--下拉框-->
+		<div class="jq22">
+			<select>
+				<option value="">举报类型</option>
+				<option value="资料虚假">资料虚假</option>
+				<option value="恶意骚扰">恶意骚扰</option>
+				<option value="滥发广告">滥发广告</option>
+				<option value="黄色淫秽">黄色淫秽</option>
+				<option value="骗取财物">骗取财物</option>
+				<option value="非穆斯林">非穆斯林</option>
+			</select>
+		</div>
+		<div class="report_reason">
+			<textarea placeholder="举报原因 ( 必填  ) : 输入不超过300字"></textarea>
+		</div>
+		<script>
+			$(function(){
+				$('select').comboSelect();
+			})
+		</script>
+	</body>
+</html>

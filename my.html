@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<title>我的</title>
+		<link rel="stylesheet" href="css/index.css" />
+		<link rel="stylesheet" href="css/dynamic_content.css" />
+		<link rel="stylesheet" href="css/my.css" />
+		<script src="js/jquery.min.js"></script>
+		<script src="js/layer.js"></script>
+	</head>
+	<body style="overflow-x: hidden;overflow-y: scroll;">
+		<!--nav 可复用-->
+		<div class="nav">
+			<p onclick="javascript:history.back(-1);"><img src="images/箭头2.png" alt="" /></p>
+			<p>晴儿</p>
+		</div>
+		<!--dynamic_content 内容-->
+		<div class="dynamic_message">
+			<img src="images/附近_03.png" alt="" />
+			<input type="file" name="img2" class="myfile" onchange="loadImg()"/>
+			<span>更换头像</span>
+			<p>晴儿</p>
+			<p>资料完善度<span>100%</span></p>
+			<p onclick="javascript:window.location.href='data.html'"><img src="images/圆角矩形-6.png"/><span>资料></span></p>
+			<div class="dynamic_attestation">
+				<span>
+					会员
+				</span>
+				<span>
+					已认证
+				</span>
+				<span>
+					已认证
+				</span>
+			</div>
+			<hr style="border: none;height: 1px;border-top: 1px solid #eee;clear: both;"/>
+			<div class="dynamic_photo">
+				<div id="layer-photos-demo">
+					<!--<img layer-src="images/相册_06.jpg" src="images/个人动态_03.png" alt="" />
+					<img layer-src="images/个人动态_03_03.png" src="images/个人动态_03_03.png" alt="" />
+					<img layer-src="images/个人动态_03_05.png" src="images/个人动态_03_05.png" alt="" />-->
+				</div>
+				<img src="images/组-1.png" alt="" />
+				<input type="file" name="img3" class="myfile3" onchange="loadImg2()"/>
+				<p>相册<img src="images/右箭头-拷贝.png" alt="" /></p>
+			</div>
+		</div>
+		<!--my_content_message-->
+		<div class="my_content_message1">
+			<div class="my_content_message1_line1" onclick="javascript:window.location.href='myattention.html'">
+				<p><img src="images/我关注的.png" alt="" />我关注的</p>
+				<p>0<img src="images/右箭头-拷贝.png" alt="" /></p>
+			</div>
+			<div class="my_content_message1_line1" onclick="javascript:window.location.href='attentionme.html'">
+				<p><img src="images/关注我的.png" alt="" />关注我的</p>
+				<p>0<img src="images/右箭头-拷贝.png" alt="" /></p>
+			</div>
+			<div class="my_content_message1_line1" onclick="javascript:window.location.href='wallet.html'">
+				<p><img src="images/我的钱包.png" alt="" />我的钱包</p>
+				<p>0<img src="images/右箭头-拷贝.png" alt="" /></p>
+			</div>
+			<div class="my_content_message1_line1">
+				<p><img src="images/我的动态.png" alt="" />我的动态</p>
+				<p><i>2</i><img src="images/右箭头-拷贝.png" alt="" /></p>
+			</div>
+		</div>
+		<div class="my_content_message2">
+			<div class="my_content_message2_line1" onclick="javascript:window.location.href='member.html'">
+				<p><img src="images/会员中心.png" alt="" />会员中心</p>
+				<p><img src="images/右箭头-拷贝.png" alt="" /></p>
+			</div>
+			<div class="my_content_message2_line1" onclick="javascript:window.location.href='attestation.html'">
+				<p><img src="images/认证中心.png" alt="" />认证中心</p>
+				<p><img src="images/右箭头-拷贝.png" alt="" /></p>
+			</div>
+		</div>
+		<div class="my_content_message3">
+			<div class="my_content_message3_line1" onclick="javascript:window.location.href='request.html'">
+				<p><img src="images/邀请好友.png" alt="" />邀请好友</p>
+				<p><img src="images/右箭头-拷贝.png" style="margin-left: 5px;" alt="" /></p>
+				<p>领奖品<img src="images/领奖品.png" alt="" /></p>
+			</div>
+			<div class="my_content_message3_line1" onclick="javascript:window.location.href='newhead.html'">
+				<p><img src="images/新手指南.png" alt="" />新手指南</p>
+				<p><img src="images/右箭头-拷贝.png" alt="" /></p>
+			</div>
+			<div class="my_content_message3_line1" onclick="javascript:window.location.href='account.html'">
+				<p><img src="images/账号设置.png" alt="" />账号设置</p>
+				<p><img src="images/右箭头-拷贝.png" alt="" /></p>
+			</div>
+			<div class="my_content_message3_line1" onclick="javascript:window.location.href='service.html'">
+				<p><img src="images/服务中心.png" alt="" />服务中心</p>
+				<p><img src="images/右箭头-拷贝.png" alt="" /></p>
+			</div>
+		</div>
+		<!--bottom 可复用-->
+		<div class="mumu_bottom">
+			<div class="mumu_bottom_line1" onclick="javascript:window.location.href='index.html'">
+				<img src="images/tab4.png" alt="穆穆" />
+				<p>穆穆</p>
+			</div>
+			<div class="mumu_bottom_line1" onclick="javascript:window.location.href='nearby.html'">
+				<img src="images/tab3.png" alt="附近" />
+				<p>附近</p>
+			</div>
+			<div class="mumu_bottom_line1" onclick="javascript:window.location.href='personletter.html'">
+				<img src="images/tab2.png" alt="信息" />
+				<p>私信</p>
+			</div>
+			<div class="mumu_bottom_line1">
+				<img src="images/tab5.png" alt="动态" onclick="javascript:window.location.href='dynamic.html'"/>
+				<p>动态</p>
+			</div>
+			<div class="mumu_bottom_line1 active">
+				<img src="images/tab1-1.png" alt="我的" />
+				<p>我的</p>
+			</div>
+		</div>
+		<script>
+			function loadImg(){
+				var file = $('.dynamic_message').find("input")[0].files[0];
+				var reader = new FileReader();
+				var imgFile;
+				reader.onload=function(e){
+					alert('文件读取完成');
+					imgFile = e.target.result;
+					console.log(imgFile);
+					$('.dynamic_message').children('img').attr('src',imgFile);
+				};
+				reader.readAsDataURL(file);
+			}
+			/*layer.photos({
+				photos:'#layer-photos-demo'
+				,anim:5
+			})*/
+			function loadImg2(){
+				var file = $('.dynamic_photo').find("input")[0].files[0];
+				var reader = new FileReader();
+				var imgFile;
+				reader.onload=function(e){
+					alert('文件读取完成');
+					imgFile = e.target.result;
+//					console.log(imgFile);
+					$('.dynamic_photo #layer-photos-demo').append('<img />');
+					var imgData = $('.dynamic_photo #layer-photos-demo img').length;
+//					alert(imgData);
+					var imgChange = $('.dynamic_photo #layer-photos-demo img').last();
+					/*imgChange.attr('src',imgFile);*/
+					imgChange.attr({
+						'src':imgFile
+					})
+					$('.myfile3').css({
+						'left':function(index,value){
+							return parseInt(value) + 58 + 'px'
+						}
+					})
+					if(imgData == 4){
+						$('.myfile3').css({
+							'display':'none'
+						})
+						$('#layer-photos-demo').next('img').hide();
+					}
+				};
+				reader.readAsDataURL(file);
+			}
+			$(function(){
+				$('.dynamic_photo').click(function(e){
+					if(e.target.tagName == 'INPUT'){
+						
+					}else{
+						window.location.href='album.html';
+					}
+				})
+			})
+		</script>
+	</body>
+</html>

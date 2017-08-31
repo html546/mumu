@@ -1,0 +1,28 @@
+.btn_group label{
+	width: 94%;
+	margin-left: 3%;
+	height: 40px;
+	line-height: 40px;
+	font-size: 14px;
+	color: #666;
+}
+.btn_group input{
+	width: 94%;
+	height: 50px;
+	border: 1px solid #eee;
+	margin-left: 3%;
+	text-indent: 13px;
+	font-size: 14px;
+	color: #999;
+}
+.btn_group button{
+	width: 94%;
+	margin-left: 3%;
+	height: 50px;
+	background: #ff6960;
+	color: #fff;
+	border: none;
+	margin-top: 40px;
+	font-size: 14px;
+	border-radius: 5px;
+}
